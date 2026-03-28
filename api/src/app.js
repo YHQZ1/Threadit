@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+
 import errorHandler from "./middleware/errorHandler.middleware.js";
 
 import authRoutes from "./routes/auth.routes.js";
