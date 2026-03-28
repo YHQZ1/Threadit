@@ -1,4 +1,3 @@
-```md
 # Threadit
 
 A lightweight Reddit-like community discussion platform built with the MERN stack.
