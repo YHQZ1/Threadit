@@ -20,6 +20,10 @@ app.use("/api/posts", postRoutes);
 app.use("/api/comments", commentRoutes);
 app.use("/api/users", userRoutes);
 
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "ok", message: "Threadit API is running" });
+});
+
 app.use(errorHandler);
 
 export default app;
