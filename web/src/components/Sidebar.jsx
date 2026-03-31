@@ -9,7 +9,7 @@ const NAV_SECTIONS = [
       { icon: HomeIcon, label: "Home", path: "/feed" },
       { icon: PopularIcon, label: "Popular", path: "/popular" },
       { icon: ExploreIcon, label: "Explore", path: "/explore" },
-      { icon: AllIcon, label: "All", path: "/all" },
+      { icon: ExploreIcon, label: "News", path: "/news" },
     ],
   },
   {
@@ -44,12 +44,41 @@ const NAV_SECTIONS = [
     ],
   },
   {
-    label: "Your stuff",
+    label: "Topics",
     items: [
-      { icon: ProfileIcon, label: "Profile", path: "/profile" },
-      { icon: SavedIcon, label: "Saved", path: "/saved" },
-      { icon: HistoryIcon, label: "History", path: "/history" },
-      { icon: SettingsIcon, label: "Settings", path: "/settings" },
+      {
+        icon: TechIcon,
+        label: "Technology",
+        path: "/t/technology",
+        count: "1.2k",
+      },
+      { icon: MusicIcon, label: "Music", path: "/t/music", count: "891" },
+      { icon: DesignIcon, label: "Design", path: "/t/design", count: "634" },
+      {
+        icon: CodeIcon,
+        label: "Programming",
+        path: "/t/programming",
+        count: "521",
+      },
+      {
+        icon: OpinionIcon,
+        label: "Opinions",
+        path: "/t/opinion",
+        count: "445",
+      },
+      {
+        icon: StartupIcon,
+        label: "Startups",
+        path: "/t/startup",
+        count: "201",
+      },
+    ],
+  },
+  {
+    label: "Communities",
+    items: [
+      { icon: ProfileIcon, label: "Start a community"},
+      { icon: SavedIcon, label: "Saved"},
     ],
   },
 ];
